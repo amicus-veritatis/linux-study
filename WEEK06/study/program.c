@@ -18,7 +18,9 @@ unsigned long long fibonacci_memoization (int n) {
 	// TODO : memoization logic	
 	// hint : if (???? != 0) return ????
 	// + else logic
-	return (fibonacci_memoization(n-1) + fibonacci_memoization(n-2)) % 1000000007;
+	if (memo[n] != 0) return memo[n];
+	memo[n] = (fibonacci_memoization(n-2) + fibonacci_memoization(n-1)) % 1000000007;
+	return memo[n];	
 }
 
 int main() {
