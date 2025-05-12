@@ -24,6 +24,7 @@ unsigned long long fibonacci_memoization (int n) {
 }
 
 int main() {
+	printf("Hello, World!\n");
 	printf("F_40 (mod 1000000007) = \n");
         printf("\t%llu\n", fibonacci_recursive(40));
 	printf("F_2000 (mod 1000000007) = \n");
